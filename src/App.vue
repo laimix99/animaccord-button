@@ -1,19 +1,153 @@
 <script setup>
-
+import BaseButton from '../components/button-animaccord/BaseButton.vue'
+import Baseicons from '../components/button-animaccord/BaseIcons.vue'
 </script>
 
 <template>
-  <div class="page">
-    <h1 class="">привет</h1>
-
+  <Baseicons/>
+  <div class="flex flex-row bg-hex-242424 min-h-100vh p-4 gap-6 items-start">
+    <div class="flex flex-col gap-6 items-center">
+      <BaseButton
+        label="отправить письмо"
+        type="violet"
+        rectangle
+      />
+      <BaseButton
+        label="отправить письмо"
+        type="pink"
+        rectangle
+      />
+      <BaseButton
+        label="отправить письмо"
+        type="yellow"
+        :showTimer="true"
+        rectangle
+        :timerOptions="{type: 'minutes', amount: 3}"
+      />
+        <BaseButton
+        label="отправить письмо"
+        type="disabled"
+        rectangle
+      />
+      <BaseButton
+        label="отправить письмо"
+        rectangle
+        type="blue"
+        :showTimer="true"
+        :timerOptions="{type: 'seconds', amount: 3}"
+      />
+      <BaseButton
+        label="отправить письмо"
+        rectangle
+        type="red"
+      />
+      <BaseButton
+        label="отправить письмо"
+        type="orange"
+        rectangle
+      />
+    </div>
+    <div class="flex flex-col gap-6 items-center">
+      <BaseButton
+        icon="prev"
+        rounded
+        type="violet"
+      />
+      <BaseButton
+        type="red"
+        rounded
+        icon="close"
+      />
+      <BaseButton
+        type="green"
+        icon="ques"
+        rounded
+      />
+      <BaseButton
+        icon="next"
+        rounded
+        type="violet"
+      />
+      <BaseButton
+        type="red"
+        icon="google"
+        rounded
+      />
+      <BaseButton
+        type="blue"
+        icon="vk"
+        rounded
+      />
+      <BaseButton
+        type="orange"
+        rounded
+        icon="od"
+      />
+      <BaseButton
+        icon="pen"
+        rounded
+        type="violet"
+      />
+    </div>
+    <div class="flex flex-col gap-6 items-center">
+      <BaseButton
+        icon="prev"
+      />
+      <BaseButton
+        icon="close"
+      />
+      <BaseButton
+        icon="ques"
+      />
+      <BaseButton
+        icon="next"
+      />
+      <BaseButton
+        icon="google"
+      />
+      <BaseButton
+        icon="vk"
+      />
+      <BaseButton
+        icon="od"
+      />
+      <BaseButton
+        icon="pen"
+      />
+    </div>
+    <BaseButton
+      type="disabled"
+      label="повторное письмо"
+      rectangle
+      :showTimer="true"
+      :timerOptions="{type: 'minutes', amount: 3}"
+    />
+    <BaseButton
+      link
+      label="Напомнить PIN-код"
+    />
   </div>
 </template>
 
-<style lang="scss" scoped>
-  .page {
-    background: red;
-    h1 {
-      color: white;
-    }
-  }
+<style lang="scss">
+@import url('https://fonts.cdnfonts.com/css/phosphorus-family');
+@font-face {
+  font-family: "Phosphate";
+  src: url("/fonts/PhosphateSolid.ttf") format("truetype"),     
+}
+// // @font-face {
+// //   font-family: "PhosphateSolid";
+// //   src: url("/fonts/PhosphateRR Solid.ttf") format("truetype"),     
+// // }
+// @font-face {
+//   font-family: "PhosphateSolid";
+//   src: url("/fonts/PhosphateSolid.ttf") format("truetype"),     
+// }
+span{
+  font-family: "Phosphate";
+  // font-family: 'Phosphorus', sans-serif;
+    // font-weight: 500;
+  // font-style: normal;
+}
+// PhosphateSolid
 </style>
