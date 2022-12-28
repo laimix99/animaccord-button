@@ -1,6 +1,6 @@
 <script setup>
-import BaseButton from '../components/button-animaccord/BaseButton.vue'
-import Baseicons from '../components/button-animaccord/BaseIcons.vue'
+import BaseButton from './components/BaseButton.vue'
+import Baseicons from './components/BaseIcons.vue'
 </script>
 
 <template>
@@ -11,11 +11,15 @@ import Baseicons from '../components/button-animaccord/BaseIcons.vue'
         label="отправить письмо"
         type="violet"
         rectangle
+        :showTimer="true"
+        :timerOptions="{type: 'minutes', amount: 1}"
       />
       <BaseButton
         label="отправить письмо"
         type="pink"
         rectangle
+        :showTimer="true"
+        :timerOptions="{type: 'minutes', amount: 2}"
       />
       <BaseButton
         label="отправить письмо"
@@ -24,27 +28,26 @@ import Baseicons from '../components/button-animaccord/BaseIcons.vue'
         rectangle
         :timerOptions="{type: 'minutes', amount: 3}"
       />
-        <BaseButton
-        label="отправить письмо"
-        type="disabled"
-        rectangle
-      />
       <BaseButton
         label="отправить письмо"
         rectangle
         type="blue"
         :showTimer="true"
-        :timerOptions="{type: 'seconds', amount: 3}"
+        :timerOptions="{type: 'seconds', amount: 4}"
       />
       <BaseButton
         label="отправить письмо"
         rectangle
         type="red"
+        :showTimer="true"
+        :timerOptions="{type: 'seconds', amount: 3}"
       />
       <BaseButton
         label="отправить письмо"
         type="orange"
         rectangle
+        :showTimer="true"
+        :timerOptions="{type: 'minutes', amount: 3}"
       />
     </div>
     <div class="flex flex-col gap-6 items-center">
