@@ -133,24 +133,12 @@ import Baseicons from './components/BaseIcons.vue'
 </template>
 
 <style lang="scss">
-@import url('https://fonts.cdnfonts.com/css/phosphorus-family');
 @font-face {
   font-family: "Phosphate";
   src: url("/fonts/PhosphateSolid.ttf") format("truetype"),     
 }
-// // @font-face {
-// //   font-family: "PhosphateSolid";
-// //   src: url("/fonts/PhosphateRR Solid.ttf") format("truetype"),     
-// // }
-// @font-face {
-//   font-family: "PhosphateSolid";
-//   src: url("/fonts/PhosphateSolid.ttf") format("truetype"),     
-// }
+
 span{
   font-family: "Phosphate";
-  // font-family: 'Phosphorus', sans-serif;
-    // font-weight: 500;
-  // font-style: normal;
 }
-// PhosphateSolid
 </style>
